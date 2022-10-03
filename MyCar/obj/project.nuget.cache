@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UEGJbdJvBrxiXzsGQn2oz9CTSlrf3uIWuDddudUqc1MpSZsGwiTSZJt99lDVBp6qBOsMvJ7iNvDTnV0enivXtA==",
+  "dgSpecHash": "6b6vLjrZmJlCyVK2JXZIfRAZaiteU9Mg7bYk7Eazah3KUEXb9i+8bGqrG+phQU9yXyd0wZJMC+nLsJBwT1GGyg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\joyce\\Documents\\C#\\ClientRegister\\MyCar.API\\MyCar\\MyCar.csproj",
+  "projectFilePath": "C:\\Users\\joyce\\Documents\\C#\\MyCar.API\\MyCar\\MyCar.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joyce\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\joyce\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

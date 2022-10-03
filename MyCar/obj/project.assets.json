@@ -214,11 +214,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joyce\\Documents\\C#\\ClientRegister\\MyCar.API\\MyCar\\MyCar.csproj",
+      "projectUniqueName": "C:\\Users\\joyce\\Documents\\C#\\MyCar.API\\MyCar\\MyCar.csproj",
       "projectName": "MyCar",
-      "projectPath": "C:\\Users\\joyce\\Documents\\C#\\ClientRegister\\MyCar.API\\MyCar\\MyCar.csproj",
+      "projectPath": "C:\\Users\\joyce\\Documents\\C#\\MyCar.API\\MyCar\\MyCar.csproj",
       "packagesPath": "C:\\Users\\joyce\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joyce\\Documents\\C#\\ClientRegister\\MyCar.API\\MyCar\\obj\\",
+      "outputPath": "C:\\Users\\joyce\\Documents\\C#\\MyCar.API\\MyCar\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joyce\\AppData\\Roaming\\NuGet\\NuGet.Config",
