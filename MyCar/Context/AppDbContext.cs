@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MyCar.Models;
+using Microsoft.Extensions.Configuration;
+using System.IO;
 
 namespace MyCar.Context
 {
@@ -9,8 +11,12 @@ namespace MyCar.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(
-                @"Server=(localdb)\\mssqllocaldb;Database=Mycar;Trusted_Connection=True;MultipleaActiveResultSets=true");
+           IConfiguration configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory()) 
+                .AddJsonFile("appsettings.json", false, true) 
+                .Build(); 
+
+            optionsBuilder.UseSqlServer(configuration.GetConnectionString("ServerConnection");
         }
     }
 }
