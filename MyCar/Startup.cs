@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MyCar.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace MyCar
 {
@@ -33,7 +34,7 @@ namespace MyCar
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MyCar", Version = "v1" });
             }); 
-            services.AddDbContext<AppDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("ServerConnection"));
+            services.AddDbContext<AppDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("ServerConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
