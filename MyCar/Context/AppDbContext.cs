@@ -16,7 +16,7 @@ namespace MyCar.Context
                 .AddJsonFile("appsettings.json", false, true) 
                 .Build(); 
 
-            optionsBuilder.UseSqlServer(configuration.GetConnectionString("ServerConnection");
+            optionsBuilder.UseSqlServer(configuration.GetConnectionString("ServerConnection"));
         }
     }
 }
