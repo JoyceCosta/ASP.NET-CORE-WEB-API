@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MyCar.Context;
 using MyCar.Models;
+using System;
 using System.Threading.Tasks;
 
 namespace MyCar.Controllers
@@ -41,5 +42,24 @@ namespace MyCar.Controllers
                 data = car
             });
         }
+
+
+        [HttpGet("{id}")] 
+        public async Task<ActionResult<Car>> GetCar(int id)
+        {
+            var car = await _appDbContext.Cars.FindAsync(id); 
+            if (car == null)
+            {
+                return NotFound();
+            }
+
+            return car;
+
+        }
+
+
+
+
+       
     }
 }
