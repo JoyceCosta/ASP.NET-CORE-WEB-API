@@ -44,6 +44,18 @@ namespace MyCar.Controllers
         }
 
 
+        [HttpGet("{id}")] 
+        public async Task<ActionResult<Car>> GetCar(int id)
+        {
+            var car = await _appDbContext.Cars.FindAsync(id); 
+            if (car == null)
+            {
+                return NotFound();
+            }
+
+            return car;
+
+        }
 
 
 
